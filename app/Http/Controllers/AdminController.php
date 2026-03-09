@@ -152,7 +152,8 @@ class AdminController extends Controller
      */
     public function editProject(Project $project): View
     {
-        return view('admin.projects.edit', compact('project'));
+        // Arahkan ke view 'create' karena file tersebut sudah didesain untuk menangani edit
+        return view('admin.projects.create', compact('project'));
     }
 
     /**
